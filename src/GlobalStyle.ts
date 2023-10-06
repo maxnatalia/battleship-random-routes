@@ -12,7 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        font-family: 'Poppins', sans-serif;
         font-size: 18px;
+        letter-spacing: 1.6px;
+        color: ${({ theme }) => theme.color.primary};
+        background-color: ${({ theme }) => theme.color.dark};
         overflow-x: hidden;
     }
 `;
