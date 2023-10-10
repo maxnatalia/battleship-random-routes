@@ -1,6 +1,6 @@
 import Layout from "../../../common/Layout";
 import Button from "../../../common/Button";
-import { GameProps } from "../useGame";
+import { GameProps } from "../interfaces";
 import backgroundWelcome from "./backgroundWelcome.jpg";
 import Rules from "./Rules";
 import useToggleRules from "./useToggleRules";
