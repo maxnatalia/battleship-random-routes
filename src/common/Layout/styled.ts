@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ContainerProps {
-  backgroundImage: string;
+  $backgroundImage: string;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -9,8 +9,8 @@ export const Container = styled.div<ContainerProps>`
   min-height: 100vh;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 18, 36, 0.4), rgba(0, 18, 36, 0.9)),
-    ${({ backgroundImage }) =>
-      backgroundImage ? `url(${backgroundImage})` : "none"};
+    ${({ $backgroundImage }) =>
+      $backgroundImage ? `url(${$backgroundImage})` : "none"};
   background-position: center;
   background-size: cover;
   display: flex;

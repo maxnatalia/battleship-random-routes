@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children, backgroundImage }: LayoutProps) => {
   return (
-    <Container backgroundImage={backgroundImage}>
+    <Container $backgroundImage={backgroundImage}>
       <Header>
         <Title>BattleShip: Random Routes</Title>
       </Header>
