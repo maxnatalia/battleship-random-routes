@@ -2,7 +2,7 @@ export interface GameProps {
   startGame?: boolean;
   handleStartGame?: () => void;
   handleExitGame?: () => void;
-  currentPlayer?: boolean;
+  isCurrentPlayer1?: boolean;
   message?: MessageProps;
   scores?: ScoreProps;
 }
