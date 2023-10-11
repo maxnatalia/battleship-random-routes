@@ -1,12 +1,24 @@
 # BattleShip: Random Routes⚓
 
-Based on the rules of the Battleship board game. This program randomly places ships on two boards and simulates gameplay between 2 players.
+Based on the rules of the Battleship board game. This program randomly places ships on two boards and simulates gameplay between 2 players: Capitan One and Capitan Two.
+
+In the future I want to create the possibility to choose between: human player and computer player (now available is version with other human). Furthermore, I also want to customize the game for different devices.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo:
 
 [🛳️Start Game!🚢](https://maxnatalia.github.io/battleship-random-routes/)
+
+## Preview:
+
+Two different Screens:
+
+- 📌**Welcome Screen with Start Button Function and Game Rules Button**
+  ![welcome.png](welcome.png)
+
+- 📌**Game Screen with Boards, Consoles, Legend, Winner Modal:**
+  ![gameBoard.png](gameBoard.png)
 
 ## Technologies:
 
@@ -19,6 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] TypeScript
 - [x] Create React App
 - [x] React Custom Hooks
+- [x] React Icons
 
 ## Available Scripts
 
