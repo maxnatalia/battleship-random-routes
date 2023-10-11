@@ -1,7 +1,7 @@
 import { GameProps } from "../../interfaces";
 import {
   Console,
-  EnemyInfo,
+  Info,
   LineProgress,
   Progress,
   StyledConsoles,
@@ -18,14 +18,17 @@ const Consoles = ({ message, isCurrentPlayer1 }: GameProps) => {
             <h5>Enemy turn...</h5>
           )}
           <LineProgress>
-            {isCurrentPlayer1 &&
-              `Now is your turn Capitan One - last message =>  ${message?.player1}`}
+            {isCurrentPlayer1 && (
+              <Info>
+                Now is your turn Capitan One - last message: {message?.player1}
+              </Info>
+            )}
           </LineProgress>
           <LineProgress>
             {!isCurrentPlayer1 ? (
               <p>Our Last Shot Effect, Captain One =&gt; {message?.player1}</p>
             ) : (
-              <EnemyInfo>Enemy Console Info =&gt; {message?.player2}</EnemyInfo>
+              <Info>Enemy Console Info =&gt; {message?.player2}</Info>
             )}
           </LineProgress>
         </Progress>
@@ -38,14 +41,17 @@ const Consoles = ({ message, isCurrentPlayer1 }: GameProps) => {
             <h5>Enemy turn...</h5>
           )}
           <LineProgress>
-            {!isCurrentPlayer1 &&
-              `Now is your turn Captain Two - last message => - ${message?.player2}`}
+            {!isCurrentPlayer1 && (
+              <Info>
+                Now is your turn Captain Two - last message: {message?.player2}
+              </Info>
+            )}
           </LineProgress>
           <LineProgress>
             {isCurrentPlayer1 ? (
               <p>Our Last Shot Effect, Captain Two =&gt; {message?.player2}</p>
             ) : (
-              <EnemyInfo>Enemy Console Info =&gt; {message?.player1}</EnemyInfo>
+              <Info>Enemy Console Info =&gt; {message?.player1}</Info>
             )}
           </LineProgress>
         </Progress>

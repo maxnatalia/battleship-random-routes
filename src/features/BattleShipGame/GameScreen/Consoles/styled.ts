@@ -33,13 +33,13 @@ export const LineProgress = styled.div`
   line-height: 2;
 `;
 
-export const EnemyInfo = styled.div`
+export const Info = styled.div`
   margin: 20px auto;
   padding: 10px;
   border-radius: 20px;
   background-image: linear-gradient(
-    rgba(215, 155, 28, 0.4),
-    rgba(215, 155, 28, 0.6)
+    rgba(215, 155, 28, 0.6),
+    rgba(215, 155, 28, 0.8)
   );
   font-size: 18px;
   font-weight: 600;
