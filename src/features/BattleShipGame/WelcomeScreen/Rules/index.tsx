@@ -1,10 +1,10 @@
 import Button from "../../../../common/Button";
+import Section from "../../../../common/Section";
 import { RulesProps } from "../useToggleRules";
-import { StyledRules } from "./styled";
 
 const Rules = ({ handleToggleRules }: RulesProps) => {
   return (
-    <StyledRules>
+    <Section $modal $top>
       <p>
         "BattleShip: Random Routes" is a modern take on the classic Battleship
         game, offering dynamic gameplay for two players. It utilizes randomly
@@ -34,7 +34,7 @@ const Rules = ({ handleToggleRules }: RulesProps) => {
         </li>
       </ul>
       <Button textBtn="Close" onClick={handleToggleRules} />
-    </StyledRules>
+    </Section>
   );
 };
 
