@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/battleship-random-routes/static/js/main.27d67e10.js",
+    "main.js": "/battleship-random-routes/static/js/main.55724090.js",
     "static/js/787.3b046b4c.chunk.js": "/battleship-random-routes/static/js/787.3b046b4c.chunk.js",
     "static/media/backgroundWelcome.jpg": "/battleship-random-routes/static/media/backgroundWelcome.f4a836f7c007bfa609f3.jpg",
     "static/media/backgroundGame.jpg": "/battleship-random-routes/static/media/backgroundGame.c1e3dd8eae4eb529606e.jpg",
     "static/media/gitHub.svg": "/battleship-random-routes/static/media/gitHub.685c0e4a102e7b27f086c04788da70ba.svg",
     "index.html": "/battleship-random-routes/index.html",
     "static/media/linkedIn.svg": "/battleship-random-routes/static/media/linkedIn.2c26b104242a1c77c13c1498fc1cd787.svg",
-    "main.27d67e10.js.map": "/battleship-random-routes/static/js/main.27d67e10.js.map",
+    "main.55724090.js.map": "/battleship-random-routes/static/js/main.55724090.js.map",
     "787.3b046b4c.chunk.js.map": "/battleship-random-routes/static/js/787.3b046b4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.27d67e10.js"
+    "static/js/main.55724090.js"
   ]
 }
