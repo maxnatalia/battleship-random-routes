@@ -30,9 +30,13 @@ export const BoardPlayer = styled.div<BoardPlayerProps>`
   ${({ $activePlayer }) =>
     !$activePlayer &&
     css`
-      transform: scale(0.5);
+      transform: scale(0.6);
       pointer-events: none;
       filter: blur(1px);
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        transform: scale(0.4);
+      }
     `}
 `;
 
@@ -60,6 +64,12 @@ export const Cell = styled.div<CellProps>`
         color: ${theme.color.dark};
         font-weight: 600;
       `}
+    ${({ $isClicked, $isShipClicked, $isShipSunk }) =>
+      ($isClicked || $isShipClicked || $isShipSunk) &&
+      css`
+        cursor: not-allowed;
+        pointer-events: none;
+      `}
   }
 
   ${({ $isClicked }) =>
@@ -83,4 +93,15 @@ export const Cell = styled.div<CellProps>`
         rgba(215, 155, 28, 0.5)
       );
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
 `;
