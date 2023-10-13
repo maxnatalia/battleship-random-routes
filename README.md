@@ -2,7 +2,9 @@
 
 Based on the rules of the Battleship board game. This program randomly places ships on two boards and simulates gameplay between 2 players: Capitan One and Capitan Two.
 
-In the future I want to create the possibility to choose between: human player and computer player (now available is version with other human). Furthermore, I also want to customize the game for different devices.
+You can play on different devices - responsiveness.
+
+In the future I want to create the possibility to choose between: human player and computer player (now available is version with other human).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
