@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledButton = styled.button`
   padding: 20px 26px;
@@ -18,5 +18,16 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.color.primary};
     background-color: ${({ theme }) => theme.color.dark};
     box-shadow: 1px 1px 20px ${({ theme }) => theme.color.primary};
+  }
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      filter: grayscale(150%);
+      cursor: not-allowed;
+    `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 16px;
   }
 `;
