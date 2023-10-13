@@ -25,6 +25,14 @@ export const Header = styled.header`
 export const Title = styled.h1`
   margin: 0;
   font-size: 60px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 22px;
+  }
 `;
 
 export const Main = styled.main`
