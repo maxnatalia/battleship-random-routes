@@ -6,7 +6,7 @@ import {
 } from "react-icons/gi";
 
 const commonStyles = {
-  fontSize: "30px",
+  fontSize: "40px",
   color: `${({ theme }: DefaultTheme) => theme.color.primary}`,
 };
 
