@@ -97,6 +97,7 @@ const useGame = () => {
           ...message,
           player1: "🆘Ups, we missed...Capitan!",
         });
+        handleSwitchPlayer();
       }
     } else {
       if (item.isShip) {
@@ -112,9 +113,9 @@ const useGame = () => {
           ...message,
           player2: "🆘Ups, we missed...Capitan!",
         });
+        handleSwitchPlayer();
       }
     }
-    handleSwitchPlayer();
   };
 
   return {
