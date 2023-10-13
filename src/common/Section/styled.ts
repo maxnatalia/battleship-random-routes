@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { SectionProps } from ".";
 
 export const StyledSection = styled.div<SectionProps>`
+  margin: 20px auto;
   padding: 20px;
   width: 90%;
   display: flex;
@@ -24,7 +25,7 @@ export const StyledSection = styled.div<SectionProps>`
     ${({ $modal }) =>
     $modal &&
     css`
-      width: 60vw;
+      width: 60%;
       border-radius: 20px;
       background-color: ${({ theme }) => theme.color.primary};
       color: ${({ theme }) => theme.color.dark};
@@ -33,5 +34,18 @@ export const StyledSection = styled.div<SectionProps>`
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        width: 80%;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        width: 100%;
+      }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
 `;
