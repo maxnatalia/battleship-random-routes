@@ -12,6 +12,12 @@ export const StyledFooter = styled.footer`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 export const LinkEmail = styled.a`
@@ -26,10 +32,9 @@ export const LinkEmail = styled.a`
     filter: brightness(140%);
   }
 
-  /* @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    font-size: 18px;
-    text-align: center;
-  } */
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 16px;
+  }
 `;
 
 export const SocialIcon = styled.a`
@@ -49,4 +54,8 @@ export const SocialIcon = styled.a`
 export const Copywrite = styled.div`
   text-align: center;
   font-weight: 600;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+  }
 `;
