@@ -4,10 +4,14 @@ interface ActivePlayerProps {
   $activePlayer?: boolean;
 }
 
-export const StyledConsoles = styled.div`
+export const StyledConsoles = styled.div<ActivePlayerProps>`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    flex-direction: column;
+  }
 `;
 
 export const Console = styled.div<ActivePlayerProps>`
@@ -21,6 +25,10 @@ export const Console = styled.div<ActivePlayerProps>`
       border: 6px solid ${({ theme }) => theme.color.primary};
       font-size: 22px;
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 10px;
+  }
 `;
 
 export const Progress = styled.div`
