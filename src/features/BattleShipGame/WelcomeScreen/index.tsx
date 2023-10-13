@@ -15,8 +15,17 @@ const WelcomeScreen = ({ handleStartGame }: GameProps) => {
         Are you ready to lead your fleet and face off against your opponent on
         uncharted waters?
       </WelcomeText>
-      <Button textBtn="Start Game" onClick={handleStartGame} />
-      <Button textBtn="Game Rules" onClick={handleToggleRules} />
+      <Button disabled textBtn="Start Game - Enemy Computer" />
+      <Button
+        textBtn="Start Game - Enemy Human"
+        title={"Play Now!"}
+        onClick={handleStartGame}
+      />
+      <Button
+        textBtn="Game Rules"
+        title={"Available soon..."}
+        onClick={handleToggleRules}
+      />
       {openRules && <Rules handleToggleRules={handleToggleRules} />}
     </Layout>
   );
